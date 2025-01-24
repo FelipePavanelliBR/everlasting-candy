@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://dxlv7lxfy181n"]
+[gd_scene load_steps=8 format=3 uid="uid://qdj4tpehptyq"]
 
 [ext_resource type="Script" path="res://Script/World.gd" id="1_2kgfm"]
 [ext_resource type="AudioStream" uid="uid://7sq3il53l6oa" path="res://Audio/OST.mp3" id="2_pgqpj"]
 [ext_resource type="PackedScene" uid="uid://ddy88bnd0h5it" path="res://Scene/CandySpawner.tscn" id="2_rive7"]
+[ext_resource type="Texture2D" uid="uid://da1xllwgsba5y" path="res://Worlds/Sample/Resources/mushroom.png" id="3_oxbqa"]
 [ext_resource type="Texture2D" uid="uid://ccxmd1v0nd7wi" path="res://Image/Title.png" id="4_5fw05"]
 [ext_resource type="AudioStream" uid="uid://bu4rmhfiu1mm5" path="res://Audio/Win.ogg" id="5_aa7p7"]
 [ext_resource type="AudioStream" uid="uid://dgnfi0xvfvhnx" path="res://Audio/Lose.wav" id="6_0fq84"]
@@ -11,6 +12,7 @@
 script = ExtResource("1_2kgfm")
 
 [node name="CandySpawner" parent="." instance=ExtResource("2_rive7")]
+candy_texture = ExtResource("3_oxbqa")
 
 [node name="Overlay" type="Sprite2D" parent="."]
 visible = false
